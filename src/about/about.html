@@ -1,19 +1,57 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<header>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-</header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <div id="nav-placeholder">
+  <header>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </header>
+  <div id="nav-placeholder"></div>
+  
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("../navbar/navbar.html");
+  });
+  </script>
 
+  <h1>About Us</h1>
+  <a href="src/login/login-page.html">go to login</a>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our Website</h1>
+      <p>Discover amazing content and connect with our community.</p>
+      <a href="signup-page.html" class="btn">Get Started</a>
     </div>
-    
-    <script>
-    $(function(){
-      $("#nav-placeholder").load("../navbar/navbar.html");
-    });
-    </script>
-    <h1>About Us</h1>
-    <a href="src/login/login-page.html">go to login</a>
+  </section>
 
+  <section class="content">
+    <h2>About Us</h2>
+    <p>We are dedicated to providing the best service for our users. Our platform offers a variety of features to help you stay connected and informed.</p>
+  </section>
+
+  <section class="features">
+    <h2>Features</h2>
+    <div class="feature-item">
+      <h3>Feature One</h3>
+      <p>Detail about feature one.</p>
+    </div>
+    <div class="feature-item">
+      <h3>Feature Two</h3>
+      <p>Detail about feature two.</p>
+    </div>
+    <div class="feature-item">
+      <h3>Feature Three</h3>
+      <p>Detail about feature three.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Our Website. All rights reserved.</p>
+  </footer>
 </body>
+</html>
