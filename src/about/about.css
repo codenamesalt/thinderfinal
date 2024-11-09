@@ -2,7 +2,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
-    color: #ff0101; /* Black text */
+    color: #000000; /* Black text */
     line-height: 1.6;
     margin: 0;
     padding: 20px;
@@ -11,9 +11,9 @@ body {
 
 /* Header Styles */
 header {
-    background: #333;
+    background: #fff56c;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px 0px;
 }
 
 /* Navigation Styles */
@@ -41,7 +41,7 @@ nav ul li a:hover {
 /* Hero Section Styles */
 .hero {
     background: url('hero-background.jpg') no-repeat center center/cover;
-    color: #fff;
+    color: #000000;
     text-align: center;
     padding: 100px 20px;
 }
