@@ -94,7 +94,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if (empty(trim($_POST["phonenumber"]))) {
         $phonenumber_err = "Please enter a phone number";
     } else {
-        $phonenumber = trim($_POST["city"]);
+        $phonenumber = trim($_POST["phonenumber"]);
     }
     
     
