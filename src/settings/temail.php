@@ -76,6 +76,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Settings</title>
     <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../login/welcome.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <style>
         body{ font: 14px sans-serif; }
@@ -107,8 +108,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="invalid-feedback"><?php echo $confirm_email_err; ?></span>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Submit">
-                <a class="btn btn-link ml-2" href="welcome.php">Cancel</a>
+                <input type="submit" class="btn-primary" value="Submit">
+                <a class="btn-primary" href="welcome.php">Cancel</a>
             </div>
         </form>
     </div>    
