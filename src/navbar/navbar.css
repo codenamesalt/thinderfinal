@@ -38,7 +38,7 @@ nav a:hover {
 #panelpic1 {
     content: url("/thinderfinal/logo.png");
     float: left;
-    width: 150px;
-    height: 100px;
+    width: 30px;
+    height: 40px;
     display: block;
 }
