@@ -17,7 +17,6 @@ nav div {
     margin: 0 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
 }
 
 nav a {
@@ -35,10 +34,16 @@ nav a:hover {
     text-decoration: none;
 }
 
+nav img {
+    max-width: 30px; /* Limit the image width */
+    height: auto;    /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image within its container */
+}
+
+/* Ensuring panelpic1 is well-sized */
 #panelpic1 {
-    content: url("/thinderfinal/logo.png");
-    float: left;
-    width: 30px;
+    max-width: 30px;
     height: 40px;
     display: block;
 }
