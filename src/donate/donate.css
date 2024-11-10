@@ -2,14 +2,14 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
-    color: #000000; 
+    color: #000000; /* Black text */
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    
 }
 
 
+/* Wrapper Styles */
 .wrapper {
     width: 360px;
     padding: 20px;
@@ -21,7 +21,7 @@ body {
 }
 
 /* Center Headers */
-h1, h2, h3, h4 {
+h1, h2, h3 {
     text-align: center;
 }
 
@@ -80,6 +80,18 @@ h1, h2, h3, h4 {
     text-align: center;
     margin-bottom: 10px;
 }
-.content h4 {
-    text-align:center;
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff56c;
+    color: rgb(67, 67, 67);
+    position: static;
+    bottom: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-top: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

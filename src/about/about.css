@@ -2,11 +2,10 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
-    color: #000000; 
+    color: #000000; /* Black text */
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    
 }
 
 
@@ -22,7 +21,7 @@ body {
 }
 
 /* Center Headers */
-h1, h2, h3, h4, p{
+h1, h2, h3 {
     text-align: center;
 }
 
@@ -31,7 +30,7 @@ h1, h2, h3, h4, p{
     background: url('hero-background.jpg') no-repeat center center/cover;
     color: #000000;
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
 .hero-content h1 {
@@ -62,14 +61,10 @@ h1, h2, h3, h4, p{
 .content, .features {
     max-width: 800px;
     padding: 20px;
-    margin: 50px auto;
+    margin: 10px auto;
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.content, .features p{
-    text-align: center;
 }
 
 .content h2, .features h2 {
@@ -85,9 +80,7 @@ h1, h2, h3, h4, p{
     text-align: center;
     margin-bottom: 10px;
 }
-.content h4 {
-    text-align:center;
-}
+
 /* Footer Styles */
 footer {
     text-align: center;

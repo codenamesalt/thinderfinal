@@ -13,7 +13,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome</title>
+    <title>Swipe</title>
     <link rel="stylesheet" href="welcome.css">
     <link rel="stylesheet" href="../navbar/navbar.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -33,14 +33,15 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </script>
     <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
     <p>
-<<<<<<< HEAD
+<<<<<<< HEAD:src/swipe/swipePage.php
         <a href="reset-password.php" class="btn-primary">Reset Your Password</a>
         <a href="logout.php" class="btn-primary">Sign Out of Your Account</a>
-        <a href="../swipe/swipe.php" class="btn-primary">Start Swiping</a>
+        <a href="../swipe/swipePage.php" class="btn-primary">Start Swiping</a>
+        <a href="../settings/susername.php" class="btn-primary">Settings</a>
 =======
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
->>>>>>> 6e93aa9dcbb80b550ff8b86a7e1a1f859af43d4b
+>>>>>>> 6e93aa9dcbb80b550ff8b86a7e1a1f859af43d4b:src/swipe/swipe.php
     </p>
     <h1>Registered Therapists</h1>
     <?php

@@ -18,60 +18,12 @@ h1, h2, h3 {
     margin-top: 50px;
 }
 
-.btn-primary {
-    background-color: #ffbb00;
-    border: none;
-    color: white;
-    padding: 10px 20px;
+/* Button Styles */
+.btn {
+    margin: 10px;
     font-size: 1em;
-    cursor: pointer;
-    margin: 5px;
-    border-radius: 4px;
+    padding: 10px 30px;
 }
-
-.btn-primary:hover {
-    background-color: #e6a700;
-}
-
-.btn-warning, .btn-danger {
-    padding: 10px 20px;
-    font-size: 1em;
-}
-
-.btn-warning {
-    background-color: #ffbb00;
-    border: none;
-    color: white;
-}
-
-.btn-warning:hover {
-    background-color: #e6a700;
-}
-
-.btn-danger {
-    background-color: #d9534f;
-    border: none;
-    color: white;
-    padding: 5px;
-}
-
-.btn-danger:hover {
-    background-color: #c9302c;
-}
-
-.invalid-feedback {
-    color: #d9534f;
-}
-
-p a {
-    color: #0056b3;
-    text-decoration: none;
-}
-
-p a:hover {
-    text-decoration: underline;
-}
-
 
 /* Data Table Styles */
 .data-table {

@@ -17,6 +17,7 @@ nav div {
     margin: 0 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 nav a {
@@ -26,7 +27,6 @@ nav a {
     font-weight: bold;
     font-size: 1.2em;
     transition: color 0.3s ease;
-    text-shadow: #787878;
 }
 
 nav a:hover {
@@ -35,9 +35,3 @@ nav a:hover {
     text-decoration: none;
 }
 
-nav img {
-    max-width: 30px;
-    height: auto;  
-    display: block;
-    margin: 0 auto;
-}
