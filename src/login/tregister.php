@@ -4,7 +4,7 @@ require_once "config.php";
  
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = $city = $state = $phonenumber = $email = "";
-$username_err = $password_err = $confirm_password_err = "";
+$username_err = $password_err = $confirm_password_err = $city_err = $state_err = $phonenumber_err = $email_err = "";
  
 function debug_to_console($data) {
     $output = $data;
@@ -71,9 +71,36 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $confirm_password_err = "Password did not match.";
         }
     }
+
+    if (empty(trim($_POST["email"]))) {
+        $email_err = "Please enter an email address";
+    } else {
+        $email = trim($_POST["email"]);
+    }
+    
+
+    if (empty(trim($_POST["city"]))) {
+        $city_err = "Please enter a city";
+    } else {
+        $city = trim($_POST["city"]);
+    }
+
+    if (empty(trim($_POST["state"]))) {
+        $state_err = "Please enter a state";
+    } else {
+        $state = trim($_POST["state"]);
+    }
+
+    if (empty(trim($_POST["phonenumber"]))) {
+        $phonenumber_err = "Please enter a phone number";
+    } else {
+        $phonenumber = trim($_POST["city"]);
+    }
+    
+    
     
     // Check input errors before inserting in database
-    if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
+    if(empty($username_err) && empty($password_err) && empty($confirm_password_err) && empty($email_err) && empty($city_err) && empty($state_err) && empty($phonenumber_err)){
         
         // Prepare an insert statement
         $sql = "INSERT INTO therapist (username, password, email, city, state, phonenumber) VALUES (?, ?, ?, ?, ?, ?)";
