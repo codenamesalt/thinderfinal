@@ -14,6 +14,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
+    <link rel="stylesheet" href="welcome.css">
     <link rel="stylesheet" href="../navbar/navbar.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <style>
@@ -34,7 +35,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <p>
         <a href="treset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="tlogout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
-        <a href="../settings/tsettings.php" class="btn btn-warning">go to settings</a>
+        <a href="../settings/tsettings.php" class="btn btn-warning">Settings</a>
     </p>
 </body>
 </html>
