@@ -23,4 +23,29 @@ h1, h2, h3, h4 {
 
 .technology-overview {
     text-align: center;
+    height: auto;
+    display: block;
+    margin: 15px, auto;
+}
+
+/* Footer Styles */ 
+footer { 
+    text-align: center; 
+    padding: 20px; 
+    background: #fff56c; 
+    color: #000000;  
+    border-top: 1px solid #dddddd; 
+} 
+
+footer p { 
+    margin: 5px 0; 
+} 
+
+footer a { 
+    color: #0056b3; 
+    text-decoration: none; 
+} 
+
+    footer a:hover { 
+    text-decoration: underline; 
 }
