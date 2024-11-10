@@ -24,3 +24,7 @@ h1, h2, h3 {
     font-size: 1em;
     padding: 10px 30px;
 }
+
+
+/* mysqli_query("ALTER TABLE thinder SET image = $image= "image/" . mysqli_query($connection, "SELECT username FROM therapist")");
+echo "</img src="mysqli_query($connection, "SELECT image FROM therapist")>"; */
