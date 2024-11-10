@@ -33,9 +33,15 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <body>
     <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
     <p>
+<<<<<<< HEAD
         <a href="treset-password.php" class="btn-primary">Reset Your Password</a>
         <a href="tlogin.php" class="btn-primary">Sign Out of Your Account</a>
         <a href="../settings/tusername.php" class="btn-primary">Settings</a>
+=======
+        <a href="treset-password.php" class="btn btn-warning">Reset Your Password</a>
+        <a href="tlogout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
+        <a href="../settings/tusername.php" class="btn btn-warning">Settings</a>
+>>>>>>> 19054c3c259e23be9c6736a690fe34b95a153a2d
     </p>
 </body>
 </html>
