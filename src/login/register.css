@@ -5,7 +5,11 @@ body {
     color: #000000; /* Black text */
     line-height: 1.6;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center content vertically */
+    align-items: center;     /* Center content horizontally */
+    min-height: 100vh;       /* Ensure body takes full height of the viewport */
 }
 
 /* Header Styles */
@@ -13,6 +17,17 @@ header {
     background: #ffbb00; /* Yellow background */
     color: white;
     padding: 10px;
+    text-align: center;
+    width: 100%; /* Ensure the header takes full width */
+}
+
+/* Wrapper Styles */
+.wrapper {
+    width: 360px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
