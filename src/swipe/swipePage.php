@@ -41,6 +41,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <h1>Registered Therapists</h1>
     <?php
 //create connection
+$host    = "localhost";
 $username = "root";
 $password = "raspberry";
 $database = "thinder";
