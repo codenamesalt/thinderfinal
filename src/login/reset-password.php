@@ -90,7 +90,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     
     <script>
     $(function(){
-      $("#nav-placeholder").load("../settings/snavbar.html");
+      $("#nav-placeholder").load("../navbar/navbar.html");
     });
     </script>
     <div class="wrapper">
