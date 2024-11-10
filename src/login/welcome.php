@@ -33,18 +33,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </script>
     <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
     <p>
-<<<<<<< HEAD
         <a href="reset-password.php" class="btn-primary">Reset Your Password</a>
         <a href="logout.php" class="btn-primary">Sign Out of Your Account</a>
         <a href="../swipe/swipe.php" class="btn-primary">Start Swiping</a>
-=======
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
-<<<<<<< HEAD
->>>>>>> 6e93aa9dcbb80b550ff8b86a7e1a1f859af43d4b
-=======
         <a href="../settings/susername.php" class="btn">Settings</a>
->>>>>>> 19054c3c259e23be9c6736a690fe34b95a153a2d
     </p>
     <h1>Registered Therapists</h1>
     <?php
