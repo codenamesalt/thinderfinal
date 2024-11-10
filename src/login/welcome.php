@@ -1,14 +1,14 @@
 <?php
 // Initialize the session
 session_start();
-
+ 
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
 }
 ?>
-
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +25,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <header>
     <div id="nav-placeholder"></div>
     </header>
-
+    
     <script>
     $(function(){
       $("#nav-placeholder").load("../navbar/navbar.html");
@@ -35,7 +35,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <p>
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
-        <a href="../swipe/swipe.php" class="btn">Start Swiping</a>
     </p>
     <h1>Registered Therapists</h1>
     <?php
