@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #000000; /* Black text */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* Wrapper Styles */
+.wrapper {
+    width: 360px;
+    padding: 20px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form Styles */
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input.form-control {
+    width: 100%;
+    border: 1px solid #ffbb00;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.form-group input.form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+}
+
+.btn-primary {
+    background-color: #ffbb00;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #e6a700;
+}
+
+.btn-warning, .btn-danger {
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+.btn-warning {
+    background-color: #ffbb00;
+    border: none;
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #e6a700;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    border: none;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+}
+
+.invalid-feedback {
+    color: #d9534f;
+}
+
+p a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
