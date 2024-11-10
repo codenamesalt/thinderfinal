@@ -25,5 +25,37 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
     </p>
+    <h1>Registered Therapists</h1>
+    <?php
+$host    = "localhost";
+$user    = "root";
+$pass    = "raspberry";
+$db_name = "thinder";
+
+//create connection
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+$connection = mysqli_connect($host, $user, $pass, $db_name);
+
+//get results from database
+$result = mysqli_query($connection, "SELECT * FROM therapist");
+
+//showing property
+echo '<table class="data-table">
+        <tr class="data-heading">';  //initialize table tag
+while ($property = mysqli_fetch_field($result)) {
+    echo '<td>' . htmlspecialchars($property->name) . '</td>';  //get field name for header
+}
+echo '</tr>'; //end tr tag
+
+//showing all data
+while ($row = mysqli_fetch_row($result)) {
+    echo "<tr>";
+    foreach ($row as $item) {
+        echo '<td>' . htmlspecialchars($item) . '</td>'; //get items 
+    }
+    echo '</tr>';
+}
+echo "</table>";
+?>
 </body>
 </html>
