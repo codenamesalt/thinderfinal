@@ -14,7 +14,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
-    <link rel="stylesheet" href="welcome.css">
+    <link rel="stylesheet" href="swipe.css">
     <link rel="stylesheet" href="../navbar/navbar.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <style>
@@ -48,11 +48,11 @@ $database = "thinder";
 $db_name = "thinder";
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-$mysqli = new mysqli($host, $user, $password, $db_name);
-$connection = mysqli_connect($host, $user, $password, $db_name);
+$mysqli = new mysqli($host, $username, $password, $db_name);
+$connection = mysqli_connect($host, $username, $password, $db_name);
 
 // Update the image path for the therapist with id=1
-$mysqli->query("UPDATE thinder SET image='image/Bill_Clinton.jpg' WHERE id=1");
+$mysqli->query("UPDATE thinder SET image='/image/Bill_Clinton.jpg' WHERE id=1");
 
 // Fetch the image path from the database
 $result = $mysqli->query("SELECT image FROM thinder WHERE id=1");
