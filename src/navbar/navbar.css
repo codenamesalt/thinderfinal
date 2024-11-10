@@ -38,7 +38,7 @@ nav a:hover {
 #panelpic1 {
     content: url("final.thinder.com");
     float: left;
-    width: 250px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
     display: block;
 }
