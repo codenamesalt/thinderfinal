@@ -76,6 +76,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Reset Password</title>
     <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="reset-password.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <style>
         body{ font: 14px sans-serif; }
