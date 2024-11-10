@@ -15,8 +15,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <meta charset="UTF-8">
     <title>Welcome</title>
     <link rel="stylesheet" href="../navbar/navbar.css">
-    <link rel="stylesheet" href="welcome.css">
-    <link rel="stylesheet" href="../navbar/navbar.css">
+    
     <style>
         body{ font: 14px sans-serif; text-align: center; }
     </style>
