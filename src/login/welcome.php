@@ -39,10 +39,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </p>
     <h1>Registered Therapists</h1>
     <?php
-$host = "localhost";
-$user = "root";
-$password = "raspberry";
-$db_name = "thinder";
+require_once "welcomeconfig.php";
 
 //create connection
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
