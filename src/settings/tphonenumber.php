@@ -12,42 +12,42 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 require_once "../login/config.php";
  
 // Define variables and initialize with empty values
-$new_username = $confirm_username = "";
-$new_username_err = $confirm_username_err = "";
+$new_phonenumber = $confirm_phonenumber = "";
+$new_phonenumber_err = $confirm_phonenumber_err = "";
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
  
     // Validate new password
-    if(empty(trim($_POST["new_username"]))){
-        $new_username_err = "Please enter the new username.";     
-    } elseif(strlen(trim($_POST["new_username"])) < 1){
-        $new_username_err = "Usernames must have atleast 1 characters.";
+    if(empty(trim($_POST["new_phonenumber"]))){
+        $new_phonenumber_err = "Please enter the new phone number.";     
+    } elseif(strlen(trim($_POST["new_p"])) < 1){
+        $new_phonenumber_err = "Phone numbers must have atleast 1 characters.";
     } else{
-        $new_username = trim($_POST["new_username"]);
+        $new_phonenumber = trim($_POST["new_phonenumber"]);
     }
     
     // Validate confirm password
-    if(empty(trim($_POST["confirm_username"]))){
-        $confirm_username_err = "Please confirm the username.";
+    if(empty(trim($_POST["confirm_phonenumber"]))){
+        $confirm_phonenumber_err = "Please confirm the phone number.";
     } else{
-        $confirm_username = trim($_POST["confirm_username"]);
-        if(empty($new_username_err) && ($new_username != $confirm_username)){
-            $confirm_username_err = "Usernames did not match.";
+        $confirm_phonenumber = trim($_POST["confirm_phonenumber"]);
+        if(empty($new_phonenumber_err) && ($new_phonenumber != $confirm_phonenumber)){
+            $confirm_phonenumber_err = "Phone numbers do not match.";
         }
     }
         
     // Check input errors before updating the database
-    if(empty($new_username_err) && empty($confirm_username_err)){
+    if(empty($new_phonenumber_err) && empty($confirm_phonenumber_err)){
         // Prepare an update statement
-        $sql = "UPDATE therapist SET username = ? WHERE id = ?";
+        $sql = "UPDATE therapist SET phonenumber = ? WHERE id = ?";
         
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "si", $param_username, $param_id);
+            mysqli_stmt_bind_param($stmt, "si", $param_phonenumber, $param_id);
             
             // Set parameters
-            $param_username = $new_username;
+            $param_phonenumber = $new_phonenumber;
             $param_id = $_SESSION["id"];
             
             // Attempt to execute the prepared statement
@@ -89,22 +89,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     
     <script>
     $(function(){
-      $("#nav-placeholder").load("../navbar/navbar.html");
+      $("#nav-placeholder").load("tsnavbar.html");
     });
     </script>
     <div class="wrapper">
-        <h2>Change Username</h2>
-        <p>Please fill out this form to change your username.</p>
+        <h2>Change phone number</h2>
+        <p>Please fill out this form to change your phone number.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
             <div class="form-group">
-                <label>New Username</label>
-                <input type="username" name="new_username" class="form-control <?php echo (!empty($new_username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $new_username; ?>">
-                <span class="invalid-feedback"><?php echo $new_username_err; ?></span>
+                <label>New phone number</label>
+                <input type="phonenumber" name="new_phonenumber" class="form-control <?php echo (!empty($new_phonenumber_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $new_phonenumber; ?>">
+                <span class="invalid-feedback"><?php echo $new_phonenumber_err; ?></span>
             </div>
             <div class="form-group">
-                <label>Confirm Username</label>
-                <input type="username" name="confirm_username" class="form-control <?php echo (!empty($confirm_username_err)) ? 'is-invalid' : ''; ?>">
-                <span class="invalid-feedback"><?php echo $confirm_username_err; ?></span>
+                <label>Confirm phone number</label>
+                <input type="phonenumber" name="confirm_phonenumber" class="form-control <?php echo (!empty($confirm_phonenumber_err)) ? 'is-invalid' : ''; ?>">
+                <span class="invalid-feedback"><?php echo $confirm_phonenumber_err; ?></span>
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
