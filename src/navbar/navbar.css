@@ -35,15 +35,8 @@ nav a:hover {
 }
 
 nav img {
-    max-width: 30px; /* Limit the image width */
-    height: auto;    /* Maintain the aspect ratio */
-    display: block;
-    margin: 0 auto; /* Center the image within its container */
-}
-
-/* Ensuring panelpic1 is well-sized */
-#panelpic1 {
     max-width: 30px;
-    height: 40px;
+    height: auto;  
     display: block;
+    margin: 0 auto;
 }
