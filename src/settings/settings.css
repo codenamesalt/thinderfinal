@@ -2,38 +2,22 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
-    color: #000000; /* Black text */
+    color: #000000; 
     line-height: 1.6;
     margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center;     /* Center content horizontally */
-    min-height: 100vh;       /* Ensure body takes full height of the viewport */
+    padding: 20px;
 }
 
-/* Header Styles */
-header {
-    background: #ffbb00; /* Yellow background */
-    color: white;
-    padding: 10px;
-    text-align: center;
-    width: 100%; /* Ensure the header takes full width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
-    position: relative;
-    top: 0;
-}
 
 /* Wrapper Styles */
 .wrapper {
     width: 360px;
     padding: 20px;
+    margin: 50px auto;
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 20px auto; /* Center the wrapper */
 }
 
 /* Form Styles */
@@ -41,14 +25,15 @@ header {
     font-weight: bold;
     color: #333;
     display: block;
-    margin-bottom: 5px;
+    margin: 5px;
 }
 
 .form-group input.form-control {
-    width: 100%;
+    width: 90%;
     border: 1px solid #ffbb00;
     border-radius: 4px;
     padding: 10px;
+    margin: auto;
     font-size: 1em;
 }
 
@@ -64,21 +49,49 @@ header {
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
+    margin: 5px;
+    border-radius: 4px;
 }
 
 .btn-primary:hover {
     background-color: #e6a700;
 }
 
-.btn-link {
-    color: #0056b3;
-    text-decoration: none;
+.btn-warning, .btn-danger {
+    padding: 10px 20px;
+    font-size: 1em;
 }
 
-.btn-link:hover {
-    text-decoration: underline;
+.btn-warning {
+    background-color: #ffbb00;
+    border: none;
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #e6a700;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    padding: 5px;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
 }
 
 .invalid-feedback {
     color: #d9534f;
+}
+
+p a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
 }
