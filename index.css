@@ -26,8 +26,7 @@ h1, h2, h3, h4 {
     max-width: 60%;
     height: auto;
     display: block;
-    margin: auto;
-    background: #ffffff; 
+    margin: 15px, auto;
     
 }
 
@@ -38,6 +37,7 @@ h1, h2, h3, h4 {
     display: block;
     margin: auto;
     background: #ffffff; 
+    border-radius: 8px;
 
 }
 
