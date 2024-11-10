@@ -8,12 +8,6 @@ body {
     padding: 20px;
 }
 
-/* Header Styles */
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-}
 
 /* Center Headers */
 h1, h2, h3 {
@@ -84,4 +78,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    margin-top: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
