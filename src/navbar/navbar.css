@@ -4,6 +4,7 @@ nav {
     padding: 15px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    border-radius: 8px;
 }
 
 nav div {
@@ -15,6 +16,7 @@ nav div {
     padding: 10px 20px;
     margin: 0 10px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -29,13 +31,7 @@ nav a {
 
 nav a:hover {
     color: #7575fe;
-    text-decoration: underline;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-nav .here {
-    border-bottom: 2px solid #007bff;
-}
-
-nav .here:hover {
-    border-bottom: 2px solid #0056b3;
-}
