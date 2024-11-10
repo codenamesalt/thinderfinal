@@ -22,13 +22,13 @@ h1, h2, h3 {
 .btn {
     margin: 10px;
     font-size: 1em;
-    padding: 10px 20px;
+    padding: 10px 30px;
 }
 
 /* Data Table Styles */
 .data-table {
     width: 80%;
-    margin: 20px auto; /* Center the table */
+    margin: auto; /* Center the table */
     border-collapse: collapse;
 }
 
@@ -48,16 +48,4 @@ h1, h2, h3 {
 
 .data-table tr:nth-child(even) {
     background-color: #ffecb3; /* Light yellow for even rows */
-}
-
-/* Wrapper Styles */
-.wrapper {
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-    margin: auto;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
