@@ -18,9 +18,8 @@
 </p>
 
 <h4 align="center">
-![ThinderSimple](https://github.com/user-attachments/assets/7431edc9-d8bd-41ef-b29b-fd2e41b94b4d)
+  ![ThinderSimple](https://github.com/user-attachments/assets/f0aa86ab-80eb-435e-b3e1-adb96ad59c16)
 
-  
 </h4>
 
 ## Key Features
