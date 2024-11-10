@@ -43,10 +43,11 @@ h1, h2, h3, h4 {
 .technology-overview {
     text-align: center;
     max-width: 60%;
+    padding: 20px;
     height: auto;
     display: block;
     margin: auto;
-    background: #d0d194; 
+    background: #f5f7aa; 
     border-radius: 8px;
 
 }
