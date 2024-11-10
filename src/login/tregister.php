@@ -3,7 +3,7 @@
 require_once "config.php";
  
 // Define variables and initialize with empty values
-$username = $password = $confirm_password = $city = $state= $phonenumber = "";
+$username = $password = $confirm_password = $city = $state = $phonenumber = $email = "";
 $username_err = $password_err = $confirm_password_err = "";
  
 // Processing form data when form is submitted
@@ -69,15 +69,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
         
         // Prepare an insert statement
-        $sql = "INSERT INTO therapist (username, password, city, state, phonenumber) VALUES (?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO therapist (username, password, email, city, state, phonenumber) VALUES (?, ?, ?, ?, ?, ?)";
          
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "sssss", $param_username, $param_password, $param_city, $param_state, $param_phonenumber);
+            mysqli_stmt_bind_param($stmt, "ssssss", $param_username, $param_password, $param_city, $param_state, $param_phonenumber);
             
             // Set parameters
             $param_username = $username;
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+            $param_email = $email;
             $param_city = $city;
             $param_state = $state;
             $param_phonenumber = $phonenumber;
@@ -130,6 +131,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <label>Confirm Password</label>
                 <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
+            </div>
+            <div class="form-group">
+                <label>Enter Email</label>
+                <input type="text" name="email" class="form-control" value="<?php echo $email;?>">
             </div>
             <div class="form-group">
                 <label>Enter City</label>
