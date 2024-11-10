@@ -35,16 +35,22 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <p>
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
-        <a href="../swipe/swipePage.php" class="btn">Start Swiping</a>
+        <!-- <a href="../swipe/swipePage.php" class="btn">Start Swiping</a> -->
         <a href="../settings/susername.php" class="btn btn-warning">Settings</a>
     </p>
     <h1>Registered Therapists</h1>
     <?php
 //create connection
+$username = "root";
+$password = "raspberry";
+$database = "thinder";
+$db_name = "thinder";
+
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+$mysqli = new mysqli($host, $user, $password, $db_name);
 $connection = mysqli_connect($host, $user, $password, $db_name);
 
-mysqli_query("ALTER TABLE thinder SET image = $image= "image/" . mysqli_query($connection, "SELECT username FROM therapist")");
+$mysqli->query("UPDATE thinder SET image='image/Bill_Clinton.jpg' WHERE id=1");
 echo "</img src="mysqli_query($connection, "SELECT image FROM therapist")>";
 
 ?>
