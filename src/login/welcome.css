@@ -30,6 +30,13 @@ h1, h2, h3 {
     border-radius: 4px;
 }
 
+.btn a:hover {
+    color: #7575fe;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* Data Table Styles */
 .data-table {
     width: 80%;
