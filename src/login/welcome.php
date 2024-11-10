@@ -36,6 +36,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
         <a href="../swipe/swipe.php" class="btn">Start Swiping</a>
+        <a href="../settings/susername.php" class="btn btn-warning">Settings</a>
     </p>
     <h1>Registered Therapists</h1>
     <?php
