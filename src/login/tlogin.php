@@ -4,7 +4,7 @@ session_start();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: welcome.php");
+    header("location: twelcome.php");
     exit;
 }
  
@@ -101,7 +101,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
     <div class="wrapper">
-        <h2>Login</h2>
+        <h2>Therapist Login</h2>
         <p>Please fill in your credentials to login.</p>
 
         <?php 
@@ -125,7 +125,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
             <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
-            <p>Therapist? <a href="tlogin.php">Login here</a>!</p>
+            <p>Therapist? <a href="../therapistlogin/tlogin.php">Login here</a>!</p>
         </form>
     </div>
 </body>
