@@ -100,6 +100,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="register.css">
     <link rel="stylesheet" href="../navbar/navbar.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <style>

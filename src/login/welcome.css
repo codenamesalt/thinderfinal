@@ -47,5 +47,5 @@ h1, h2, h3 {
 }
 
 .data-table tr:nth-child(even) {
-    background-color: #ffecb3; /* Light yellow for even rows */
+    background-color: #adaaa3; /* Gray for even rows */
 }
