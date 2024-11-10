@@ -18,11 +18,7 @@
   <a href="#license">License</a>
 </p>
 
-<h4 align="center">
 ![ThinderSimple](https://github.com/user-attachments/assets/bb2fd25e-a763-433e-9fd7-58e802c29bb0)
-
-
-</h4>
 
 ## Key Features
 
