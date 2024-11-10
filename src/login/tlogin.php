@@ -93,6 +93,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="stylesheet" href="src/navbar/navbar.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body{ font: 14px sans-serif; }
@@ -100,6 +101,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body>
+    <header>
+        <div id="nav-placeholder"></div>
+    </header>
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("src/navbar/navbar.html");
+    });
+    </script>
+
     <div class="wrapper">
         <h2>Therapist Login</h2>
         <p>Please fill in your credentials to login.</p>
