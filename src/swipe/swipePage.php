@@ -50,8 +50,19 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 $mysqli = new mysqli($host, $user, $password, $db_name);
 $connection = mysqli_connect($host, $user, $password, $db_name);
 
-// $mysqli->query("UPDATE thinder SET image='image/Bill_Clinton.jpg' WHERE id=1");
-// echo "</img src="mysqli_query($connection, "SELECT image FROM therapist")>";
+// Update the image path for the therapist with id=1
+$mysqli->query("UPDATE thinder SET image='image/Bill_Clinton.jpg' WHERE id=1");
+
+// Fetch the image path from the database
+$result = $mysqli->query("SELECT image FROM thinder WHERE id=1");
+
+if ($result) {
+    $row = $result->fetch_assoc();
+    $image_path = $row['image'];
+
+    // Display the image
+    echo "<img src='$image_path'>";
+}
 
 ?>
 </body>
