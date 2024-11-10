@@ -2,7 +2,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
-    color: #000000; /* Black text */
+    color: #000000; 
     line-height: 1.6;
     margin: 0;
     padding: 20px;
@@ -28,7 +28,7 @@ h1, h2, h3 {
 /* Data Table Styles */
 .data-table {
     width: 80%;
-    margin: auto; /* Center the table */
+    margin: auto; 
     border-collapse: collapse;
 }
 
@@ -39,13 +39,13 @@ h1, h2, h3 {
 }
 
 .data-table th {
-    background-color: #ffecb3; /* Light yellow for header */
+    background-color: #ffecb3; 
 }
 
 .data-table tr:nth-child(odd) {
-    background-color: #fff176; /* Yellow for odd rows */
+    background-color: #fff176; 
 }
 
 .data-table tr:nth-child(even) {
-    background-color: #d3d3d3; /* Gray for even rows */
+    background-color: #d3d3d3; 
 }
