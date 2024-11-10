@@ -6,6 +6,13 @@ require_once "config.php";
 $username = $password = $confirm_password = $city = $state = $phonenumber = $email = "";
 $username_err = $password_err = $confirm_password_err = "";
  
+function debug_to_console($data) {
+    $output = $data;
+    if (is_array($output))
+        $output = implode(',', $output);
+
+    echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+}
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
  
@@ -82,6 +89,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $param_city = $city;
             $param_state = $state;
             $param_phonenumber = $phonenumber;
+            debug_to_console($email);
+            debug_to_console($city);
+            debug_to_console($state);
+            debug_to_console($phonenumber);
+            debug_to_console($username);
+            debug_to_console($password);
+
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
