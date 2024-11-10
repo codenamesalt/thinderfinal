@@ -17,12 +17,11 @@
   <a href="#license">License</a>
 </p>
 
-<p align="center"> 
-  
+<h4 align="center">
 ![ThinderSimple](https://github.com/user-attachments/assets/7431edc9-d8bd-41ef-b29b-fd2e41b94b4d)
 
   
-</p>
+</h4>
 
 ## Key Features
 
