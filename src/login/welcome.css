@@ -28,6 +28,7 @@ h1, h2, h3 {
     cursor: pointer;
     margin: 5px;
     border-radius: 4px;
+    text-decoration: none;
 }
 
 .btn a:hover {
@@ -35,6 +36,7 @@ h1, h2, h3 {
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
+    background-color: #e6a700;
 }
 
 /* Data Table Styles */
