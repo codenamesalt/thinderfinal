@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #000000; /* Black text */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* Wrapper Styles */
+.wrapper {
+    width: 360px;
+    padding: 20px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Center Headers */
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: #000000;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    background-color: #ffbb00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-content .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Content Section Styles */
+.content, .features {
+    max-width: 800px;
+    padding: 20px;
+    margin: 10px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h2, .features h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feature-item {
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff56c;
+    color: rgb(67, 67, 67);
+    position: static;
+    bottom: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-top: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
