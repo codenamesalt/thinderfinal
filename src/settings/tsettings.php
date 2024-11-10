@@ -81,7 +81,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="text" name="new_username" value="<?php echo $username; ?>">
             </div>
             <div class="form-group">
-                <input type="submit" class = "btn btn-primary" value = "submit"/>
+                <input type="submit" class = "btn btn-primary" value = "Submit"/>
             </div>
         </form>
     </body>
