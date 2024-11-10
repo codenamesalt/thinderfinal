@@ -82,6 +82,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body>
+    <header>
+        <div id="nav-placeholder"></div>
+    </header>
+    
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("../navbar/navbar.html");
+    });
+    </script>
     <div class="wrapper">
         <h2>Reset Password</h2>
         <p>Please fill out this form to reset your password.</p>

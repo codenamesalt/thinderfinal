@@ -19,6 +19,15 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         body{ font: 14px sans-serif; text-align: center; }
     </style>
 </head>
+    <header>
+        <div id="nav-placeholder"></div>
+    </header>
+    
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("../navbar/navbar.html");
+    });
+    </script>
 <body>
     <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
     <p>

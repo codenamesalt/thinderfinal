@@ -26,7 +26,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     
     <script>
     $(function(){
-      $("#nav-placeholder").load("src/navbar/navbar.html");
+      $("#nav-placeholder").load("../navbar/navbar.html");
     });
     </script>
     <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
@@ -36,10 +36,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </p>
     <h1>Registered Therapists</h1>
     <?php
-$host    = "localhost";
-$user    = "root";
-$pass    = "raspberry";
-$db_name = "thinder";
+require_once 'welcomeconfig.php';
 
 //create connection
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
