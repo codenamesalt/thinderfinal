@@ -116,12 +116,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $param_city = $city;
             $param_state = $state;
             $param_phonenumber = $phonenumber;
-            debug_to_console($email);
-            debug_to_console($city);
-            debug_to_console($state);
-            debug_to_console($phonenumber);
-            debug_to_console($username);
-            debug_to_console($password);
 
             
             // Attempt to execute the prepared statement
@@ -175,7 +169,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="form-group">
                 <label>Enter Email</label>
-                <input type="text" name="email" class="form-control" value="<?php echo $email;?>">
+                <input type="text" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
             </div>
             <div class="form-group">
                 <label>Enter City</label>
