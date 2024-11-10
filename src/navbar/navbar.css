@@ -35,3 +35,10 @@ nav a:hover {
     text-decoration: none;
 }
 
+#panelpic1 {
+    content: url("final.thinder.com");
+    float: left;
+    width: 250px;
+    height: 150px;
+    display: block;
+}
