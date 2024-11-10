@@ -1,6 +1,6 @@
 /* General Navigation Styles */
 nav {
-    background-color: #ffbb00;
+    background-color: #fff56c;
     padding: 15px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -10,9 +10,10 @@ nav div {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff56c;
+    background: #ffbb00;
     color: #fff;
-    padding: 10px 0px;
+    padding: 10px 20px;
+    border-radius: 8px;
 
 }
 
