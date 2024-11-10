@@ -35,7 +35,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <p>
         <a href="treset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="tlogout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
-        <a href="../settings/tsettings.php" class="btn btn-warning">Settings</a>
+        <a href="../settings/tusername.php" class="btn btn-warning">Settings</a>
     </p>
 </body>
 </html>

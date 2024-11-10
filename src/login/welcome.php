@@ -35,13 +35,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <p>
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
+        <a href="../swipe/swipe.php" class="btn">Start Swiping</a>
     </p>
     <h1>Registered Therapists</h1>
     <?php
-$host = "localhost";
-$user = "root";
-$password = "raspberry";
-$db_name = "thinder";
+require_once "welcomeconfig.php";
 
 //create connection
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
