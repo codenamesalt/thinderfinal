@@ -33,10 +33,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </script>
     <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
     <p>
-        <a href="reset-password.php" class="btn">Reset Your Password</a>
-        <a href="logout.php" class="btn">Sign Out of Your Account</a>
-        <a href="../swipe/swipePage.php" class="btn">Start Swiping</a>
-        <a href="../settings/susername.php" class="btn">Settings</a>
+        <a href="reset-password.php" class="btn-primary">Reset Your Password</a>
+        <a href="logout.php" class="btn-primary">Sign Out of Your Account</a>
+        <a href="../swipe/swipePage.php" class="btn-primary">Start Swiping</a>
+        <a href="../settings/susername.php" class="btn-primary">Settings</a>
     </p>
     <?php
 require_once "welcomeconfig.php";

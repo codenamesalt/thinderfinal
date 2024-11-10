@@ -4,22 +4,45 @@ body {
     background-color: #f4f4f9;
     color: #000000;
     line-height: 1.6;
-    margin: 0;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Center Headers */
-h1, h2, h3 {
+/* Wrapper Styles */
+.wrapper {
+    width: 360px;
+    padding: 20px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-/* Welcome Message */
-.my-5 {
-    margin-top: 50px;
+/* Form Styles */
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin: 5px;
 }
 
-/* Button Styles */
-.btn {
+.form-group input.form-control {
+    width: 90%;
+    border: 1px solid #ffbb00;
+    border-radius: 4px;
+    padding: 10px;
+    margin: auto;
+    font-size: 1em;
+}
+
+.form-group input.form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+}
+
+.btn-primary {
     background-color: #ffbb00;
     border: none;
     color: white;
@@ -28,38 +51,36 @@ h1, h2, h3 {
     cursor: pointer;
     margin: 5px;
     border-radius: 4px;
-    text-decoration: none;
 }
 
-.btn a:hover {
-    color: #7575fe;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
+.btn-primary:hover {
     background-color: #e6a700;
 }
 
-/* Data Table Styles */
-.data-table {
-    width: 80%;
-    margin: auto;
-    border-collapse: collapse;
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 5px;
+    border-radius: 4px;
 }
 
-.data-table th, .data-table td {
-    border: 1px solid #dddddd;
-    padding: 20px;
-    text-align: center;
+.btn-secondary:hover {
+    background-color: #5a6268;
 }
 
-.data-table th {
-    background-color: #ffecb3; 
+.invalid-feedback {
+    color: #d9534f;
+    padding: 5px;
 }
 
-.data-table tr:nth-child(odd) {
-    background-color: #fff176; 
+p a {
+    color: #0056b3;
+    text-decoration: none;
 }
 
-.data-table tr:nth-child(even) {
-    background-color: #d3d3d3; 
+p a:hover {
+    text-decoration: underline;
 }
