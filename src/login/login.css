@@ -25,7 +25,7 @@ body {
     font-weight: bold;
     color: #333;
     display: block;
-    margin-bottom: 5px;
+    margin: 5px;
 }
 
 .form-group input.form-control {
@@ -33,6 +33,7 @@ body {
     border: 1px solid #ffbb00;
     border-radius: 4px;
     padding: 10px;
+    margin: auto;
     font-size: 1em;
 }
 
