@@ -108,7 +108,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </header>
     <script>
     $(function(){
-      $("#nav-placeholder").load("src/navbar/navbar.html");
+      $("#nav-placeholder").load("../navbar/navbar.html");
     });
     </script>
 
