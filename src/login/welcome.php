@@ -40,7 +40,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 $host = "localhost";
 $user = "root";
 $password = "raspberry";
-$db_name = "thinder"
+$db_name = "thinder";
 
 //create connection
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
