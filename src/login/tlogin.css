@@ -48,26 +48,17 @@ body {
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
+    margin: 5px;
+    border-radius: 4px;
 }
 
 .btn-primary:hover {
     background-color: #e6a700;
 }
 
-.btn-secondary {
-    background-color: #6c757d;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1em;
-}
-
-.btn-secondary:hover {
-    background-color: #5a6268;
-}
-
 .invalid-feedback {
     color: #d9534f;
+    padding: 5px;
 }
 
 p a {
