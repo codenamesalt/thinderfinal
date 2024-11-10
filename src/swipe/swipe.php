@@ -48,25 +48,33 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 $connection = mysqli_connect($host, $user, $password, $db_name);
 
 //get results from database
-$result = mysqli_query($connection, "SELECT username, email, phonenumber, city, state FROM therapist");
+$result = mysqli_query($connection, "SELECT username, email, phonenumber, city, state, image FROM therapist");
 
-//showing property
-echo '<table class="data-table">
-        <tr class="data-heading">';  //initialize table tag
-while ($property = mysqli_fetch_field($result)) {
-    echo '<td>' . htmlspecialchars($property->name) . '</td>';  //get field name for header
-}
-echo '</tr>'; //end tr tag
 
-//showing all data
-while ($row = mysqli_fetch_row($result)) {
-    echo "<tr>";
-    foreach ($row as $item) {
-        echo '<td>' . htmlspecialchars($item) . '</td>'; //get items 
-    }
-    echo '</tr>';
-}
-echo "</table>";
+
+// //showing property
+// echo '<table class="data-table">
+
+//         <tr class="data-heading">';  //initialize table tag
+// while ($property = mysqli_fetch_field($result)) {
+//     echo '<td>' . htmlspecialchars($property->name) . '</td>';  //get field name for header
+// }
+// echo '</tr>'; //end tr tag
+
+// //showing all data
+// while ($row = mysqli_fetch_row($result)) {
+//     echo "<tr>";
+//     foreach ($row as $item) {
+//         echo '<td>' . htmlspecialchars($item) . '</td>'; //get items 
+//     }
+//     echo '</tr>';
+// }
+// echo "</table>";
+
+mysqli_query("ALTER TABLE thinder SET image = $image= "image/" . mysqli_query($connection, "SELECT username FROM therapist")");
+echo "</img src="mysqli_query($connection, "SELECT image FROM therapist")>";
+
+
 ?>
 </body>
 </html>
