@@ -23,7 +23,7 @@ h1, h2, h3 {
 /* Hero Section Styles */
 .hero {
     background: url('hero-background.jpg') no-repeat center center/cover;
-    color: #fff;
+    color: #000000;
     text-align: center;
     padding: 100px 20px;
 }
@@ -39,7 +39,7 @@ h1, h2, h3 {
 }
 
 .hero-content .btn {
-    background-color: #007bff;
+    background-color: #ffbb00;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -79,8 +79,8 @@ h1, h2, h3 {
 footer {
     text-align: center;
     padding: 20px;
-    background: #594e4e;
-    color: rgb(255, 251, 0);
+    background: #fff56c;
+    color: rgb(67, 67, 67);
     position: absolute;
     bottom: 0;
     width: 100%;
