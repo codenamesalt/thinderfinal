@@ -48,7 +48,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 $connection = mysqli_connect($host, $user, $password, $db_name);
 
 //get results from database
-$result = mysqli_query($connection, "SELECT username, email, phonenumber, city, state, image FROM therapist");
+// $result = mysqli_query($connection, "SELECT username, email, phonenumber, city, state, image FROM therapist");
 
 
 
