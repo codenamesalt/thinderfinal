@@ -100,11 +100,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="..src/navbar/navbar.css">
-=======
     <link rel="stylesheet" href="../navbar/navbar.css">
->>>>>>> f655e1f6595686c0849e5a5f683719063ac84604
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <style>
