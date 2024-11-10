@@ -17,7 +17,7 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/cole4651/thinderfinal/main/ThinderSimple.gif)
+![ThinderSimple](https://github.com/user-attachments/assets/6f366dc3-10fc-4197-90d9-a7661dd23e51)
 
 ## Key Features
 
