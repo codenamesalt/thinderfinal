@@ -11,11 +11,6 @@ body {
     min-height: 100vh;
 }
 
-/* Navbar Placeholder */
-#nav-placeholder {
-    margin-bottom: 20px;
-}
-
 /* Wrapper Styles */
 .wrapper {
     width: 360px;
@@ -24,14 +19,6 @@ body {
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-/* Header Styles */
-header {
-    background: #ffbb00; /* Yellow background */
-    color: white;
-    padding: 10px;
     text-align: center;
 }
 
