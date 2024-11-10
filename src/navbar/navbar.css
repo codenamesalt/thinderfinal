@@ -1,6 +1,6 @@
 /* General Navigation Styles */
 nav {
-    background-color: #333;
+    background-color: #333333;
     padding: 10px 0;
     text-align: center;
 }
@@ -12,7 +12,7 @@ nav div {
 }
 
 nav a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
