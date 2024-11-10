@@ -63,7 +63,7 @@ if ($result) {
 
     // Display the image
     echo "<img src='$image_path'>";
-    echo htmlspecialchars($image_path["username"]);
+    echo htmlspecialchars($image_path);
 }
 
 ?>
