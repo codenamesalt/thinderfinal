@@ -1,0 +1,51 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #000000; /* Black text */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Center Headers */
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Welcome Message */
+.my-5 {
+    margin-top: 50px;
+}
+
+/* Button Styles */
+.btn {
+    margin: 10px;
+    font-size: 1em;
+    padding: 10px 30px;
+}
+
+/* Data Table Styles */
+.data-table {
+    width: 80%;
+    margin: auto; /* Center the table */
+    border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #dddddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.data-table th {
+    background-color: #ffecb3; /* Light yellow for header */
+}
+
+.data-table tr:nth-child(odd) {
+    background-color: #fff176; /* Yellow for odd rows */
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #d3d3d3; /* Gray for even rows */
+}
