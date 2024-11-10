@@ -35,6 +35,10 @@ h1, h2, h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.content, .features p{
+    text-align: center;
+}
+
 .content h2, .features h2 {
     text-align: center;
     margin-bottom: 20px;
