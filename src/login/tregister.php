@@ -3,7 +3,7 @@
 require_once "config.php";
  
 // Define variables and initialize with empty values
-$username = $password = $confirm_password = "";
+$username = $password = $confirm_password = $city = $state= $phonenumber = "";
 $username_err = $password_err = $confirm_password_err = "";
  
 // Processing form data when form is submitted
@@ -43,6 +43,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             mysqli_stmt_close($stmt);
         }
     }
+
+    
     
     // Validate password
     if(empty(trim($_POST["password"]))){
@@ -67,15 +69,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
         
         // Prepare an insert statement
-        $sql = "INSERT INTO therapist (username, password) VALUES (?, ?)";
+        $sql = "INSERT INTO therapist (username, password, city, state, phonenumber) VALUES (?, ?, ?, ?, ?)";
          
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
+            mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password, $param_city, $param_state, $param_phonenumber);
             
             // Set parameters
             $param_username = $username;
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+            $param_city = $city;
+            $param_state = $state;
+            $param_phonenumber = $phonenumber;
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
@@ -126,6 +131,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div>
+            <div class="form-group">
+                <label>Enter City</label>
+                <input type="text" name="city" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Enter State ex. KS for Kansas</label>
+                <input type="text" name="state" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Enter Phone number without dashes</label>
+                <input type="text" name="phonenumber" class="form-control">
+            </div>
+
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
                 <input type="reset" class="btn btn-secondary ml-2" value="Reset">
