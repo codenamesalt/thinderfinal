@@ -9,13 +9,6 @@ body {
     text-align: center; /* Center align text */
 }
 
-/* Header Styles */
-header {
-    background: #fff56c;
-    color: #fff;
-    padding: 10px 0px;
-}
-
 /* Navigation Styles */
 nav ul {
     list-style: none;
