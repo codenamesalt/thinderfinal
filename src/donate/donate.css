@@ -84,17 +84,4 @@ h1, h2, h3, h4 {
 .content h4 {
     text-align:center;
 }
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #fff56c;
-    color: rgb(67, 67, 67);
-    position: static;
-    bottom: 0;
-    width: 100%;
-    margin-left: 0;
-    margin-top: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+
