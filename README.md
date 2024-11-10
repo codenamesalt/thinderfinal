@@ -18,7 +18,10 @@
 </p>
 
 <p align="center"> 
-  ![ThinderSimple](https://github.com/user-attachments/assets/6f366dc3-10fc-4197-90d9-a7661dd23e51) 
+  
+![ThinderSimple](https://github.com/user-attachments/assets/7431edc9-d8bd-41ef-b29b-fd2e41b94b4d)
+
+  
 </p>
 
 ## Key Features
