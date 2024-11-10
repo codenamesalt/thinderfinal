@@ -8,7 +8,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     exit;
 }
 ?>
- 
+<h1>swipe</h1>
+<!--  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,4 +78,4 @@ echo "</img src="mysqli_query($connection, "SELECT image FROM therapist")>";
 
 ?>
 </body>
-</html>
+</html> -->
