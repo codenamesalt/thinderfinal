@@ -8,12 +8,11 @@ body {
     padding: 20px;
 }
 
-
 /* Wrapper Styles */
 .wrapper {
     width: 360px;
     padding: 20px;
-    margin: 50px auto;
+    margin-top: 20px; /* Add some space between the header and the form */
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -54,29 +53,16 @@ body {
     background-color: #e6a700;
 }
 
-.btn-warning, .btn-danger {
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: white;
     padding: 10px 20px;
     font-size: 1em;
 }
 
-.btn-warning {
-    background-color: #ffbb00;
-    border: none;
-    color: white;
-}
-
-.btn-warning:hover {
-    background-color: #e6a700;
-}
-
-.btn-danger {
-    background-color: #d9534f;
-    border: none;
-    color: white;
-}
-
-.btn-danger:hover {
-    background-color: #c9302c;
+.btn-secondary:hover {
+    background-color: #5a6268;
 }
 
 .invalid-feedback {
