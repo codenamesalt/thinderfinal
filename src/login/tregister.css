@@ -13,7 +13,7 @@ body {
 .wrapper {
     width: 360px;
     padding: 20px;
-    margin: 50px auto;
+    margin: auto;
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
