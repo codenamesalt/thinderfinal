@@ -56,7 +56,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $param_id = $_SESSION["id"];
 
             if(mysqli_stmt_execute($stmt)){
-                return;
+                header("location: tsetting.php");
+                exit();
             } else {
                 echo "Unknown error occured, please try again later.";
             }
@@ -77,7 +78,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <body>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class = "form-group">
-                <h1>Username: <b><?php echo htmlspecialchars($_SESSION["username"]);?></b></h1>
+                <h1>Change Username</h1>
                 <input type="text" name="new_username" value="<?php echo $username; ?>">
             </div>
             <div class="form-group">
