@@ -85,3 +85,12 @@ h1, h2, h3, h4 {
     text-align:center;
 }
 
+.wrapper {
+    width: 360px;
+    padding: 20px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
