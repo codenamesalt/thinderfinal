@@ -133,15 +133,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="form-group">
                 <label>Enter City</label>
-                <input type="text" name="city" class="form-control">
+                <input type="text" name="city" class="form-control" value="<?php echo $city;?>">
             </div>
             <div class="form-group">
                 <label>Enter State ex. KS for Kansas</label>
-                <input type="text" name="state" class="form-control">
+                <input type="text" name="state" class="form-control" value="<?php echo $state;?>">
             </div>
             <div class="form-group">
                 <label>Enter Phone number without dashes</label>
-                <input type="text" name="phonenumber" class="form-control">
+                <input type="text" name="phonenumber" class="form-control" value="<?php echo $phonenumber;?>">
             </div>
 
             <div class="form-group">
